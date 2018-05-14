@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.graduation.one.graduation">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".acyivity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".acyivity.Student"></activity>
+        <activity android:name=".acyivity.Student1"></activity>
+        <activity android:name=".acyivity.Teacher"></activity>
+        <activity android:name=".acyivity.Teacher1"></activity>
+        <activity android:name=".acyivity.InsertClass"></activity>
+        <activity android:name=".acyivity.InsertMessage"></activity>
+        <activity android:name=".acyivity.SelectAchievement"></activity>
+        <activity android:name=".acyivity.MyMessage"></activity>
+        <activity android:name=".acyivity.Insert_credit"></activity>
+        <activity android:name=".acyivity.MyClass"></activity>
+        <activity android:name=".acyivity.TeacherStudentEvery"></activity>
+        <activity android:name=".acyivity.Qingjia"></activity>
+        <activity android:name=".acyivity.qingjiachaxun"></activity>
+        <activity android:name=".acyivity.ChangePswActivity"></activity>
+        <activity android:name=".acyivity.MyMessageTeacher"></activity>
+        <activity android:name=".acyivity.SelectCredit"></activity>
+        <activity android:name=".acyivity.SelectMassage"></activity>
+        <activity android:name=".acyivity.SelectPrize"></activity>
+        <activity android:name=".acyivity.Qingxiao"></activity>
+        <activity android:name=".acyivity.MyMessage1"></activity>
+        <activity android:name=".acyivity.SelectCredit1"></activity>
+        <activity android:name=".acyivity.SelectMassage1"></activity>
+        <activity android:name=".acyivity.SelectPrize1"></activity>
+        <activity android:name=".acyivity.Zonghe"></activity>
+        <activity android:name=".acyivity.ChangeEmail"></activity>
+        <activity android:name=".acyivity.ChangePhone"></activity>
+    </application>
+
+</manifest>

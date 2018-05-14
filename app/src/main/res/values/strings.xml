@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">高校助手</string>
+    <string name="student_number">学号</string>
+    <string name="prize">奖项</string>
+    <string name="nClass">班级</string>
+    <string name="me_text">我的</string>
+    <string name="wechat_text">成绩</string>
+    <string name="wechat">请销假</string>
+    <string name="find_text">奖项</string>
+</resources>
