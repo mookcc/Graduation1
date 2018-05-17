@@ -48,7 +48,7 @@ public class ChangeEmail extends AppCompatActivity {
             public void onClick(View v) {
                 String email1=et_email1.getText().toString();
                 String email2=et_email.getText().toString();
-                if(email1==email2) {
+                if(email1.equals(email2)) {
                     final String email=et_email1.getText().toString();
                     final SharedPreferences editor=getSharedPreferences("data2014",MODE_PRIVATE);
                     OkHttpUtils

@@ -48,7 +48,7 @@ public class ChangePhone extends AppCompatActivity {
             public void onClick(View v) {
                 String phone1=et_phone1.getText().toString();
                 String phone2=et_phone.getText().toString();
-                if(phone1==phone2) {
+                if(phone1.equals(phone2)) {
                     final String phone=et_phone1.getText().toString();
                     final SharedPreferences editor=getSharedPreferences("data2014",MODE_PRIVATE);
                     OkHttpUtils
