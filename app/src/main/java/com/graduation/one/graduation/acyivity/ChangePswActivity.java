@@ -115,7 +115,7 @@ public class ChangePswActivity extends AppCompatActivity {
                 startActivity(intent);
                 SpUtil.putBoolean(Constant.IS_REMBER_PWD,false);
                 closeProgressDialog();
-                finish();
+                this.finish();
                 ToastUtil.show("修改成功");
             }else {
                 ToastUtil.show("网络错误，请重新修改");
