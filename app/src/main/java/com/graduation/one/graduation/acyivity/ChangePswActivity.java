@@ -115,7 +115,8 @@ public class ChangePswActivity extends AppCompatActivity {
                 startActivity(intent);
                 SpUtil.putBoolean(Constant.IS_REMBER_PWD,false);
                 closeProgressDialog();
-                this.finish();
+                //注销更改密码页面
+                ChangePswActivity.this.finish();
                 ToastUtil.show("修改成功");
             }else {
                 ToastUtil.show("网络错误，请重新修改");
@@ -133,17 +134,6 @@ public class ChangePswActivity extends AppCompatActivity {
         et_new_true = (EditText) findViewById(R.id.et_new_true);
         bt_pwd_change = (Button) findViewById(R.id.pwd_change);
 
-//        toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-//        toolbar.setTitle("修改密码");
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//            }
-//        });
     }
 
     private void showProgressDialogs() {

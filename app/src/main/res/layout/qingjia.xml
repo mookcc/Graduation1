@@ -26,7 +26,7 @@
             android:textColorHint="#1d38d1">
 
             <EditText
-                android:id="@+id/et_teacher"
+                android:id="@+id/et_prize1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="奖项名称"
@@ -52,10 +52,10 @@
             android:textColorHint="#1d38d1">
 
             <EditText
-                android:id="@+id/et_classnName"
+                android:id="@+id/et_teacher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="所在班级"
+                android:hint="教师号"
                 android:inputType="textPersonName"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
@@ -80,7 +80,7 @@
             android:id="@+id/et_massage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="获得时间"
+            android:hint="获奖凭证"
             android:inputType="textPersonName"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
@@ -88,31 +88,8 @@
             android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
 </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingEnd="30dp"
-        android:paddingStart="30dp">
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/text_input_massage1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColorHint="#1d38d1">
 
-            <EditText
-                android:id="@+id/et_massage1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="奖项凭证"
-                android:inputType="textPersonName"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:textColor="#1d38d1"
-                android:textSize="18sp" />
-        </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
 <Button
     android:id="@+id/shangchuan"
     android:layout_width="match_parent"

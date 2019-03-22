@@ -13,6 +13,9 @@ import com.graduation.one.graduation.R;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import okhttp3.Call;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -56,9 +59,9 @@ public class Fragment_5 extends android.support.v4.app.Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String et_liyou1=et_liyou.getText().toString();
-                final String et_student_name1=et_student_name.getText().toString();
-                final String et_student_number2=et_student_number1.getText().toString();
+                final String et_liyou1=et_liyou.getText().toString().trim();
+                final String et_student_name1=et_student_name.getText().toString().trim();
+                final String et_student_number2=et_student_number1.getText().toString().trim();
                 final String et_time1=et_time.getText().toString().trim();
                 SharedPreferences editor=getContext().getSharedPreferences("data2014",MODE_PRIVATE);
                 OkHttpUtils
@@ -79,7 +82,16 @@ public class Fragment_5 extends android.support.v4.app.Fragment {
 
                             @Override
                             public void onResponse(String response, int id) {
-                                Toast.makeText(getContext(),"请假成功！",Toast.LENGTH_SHORT).show();
+                                try {
+                                    JSONObject jsonObject=new JSONObject(response);
+                                    boolean s=jsonObject.getBoolean("sucessed");
+                                    if (s) {
+                                        Toast.makeText(getContext(), "请假成功！", Toast.LENGTH_SHORT).show();
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+
                             }
                         });
             }

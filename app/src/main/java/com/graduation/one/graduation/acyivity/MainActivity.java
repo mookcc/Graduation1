@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 boolean isLogin = true;
                 String account = et_account.getText().toString();
                 String password = et_pass.getText().toString();
-
                 if (account.equals("")) {
                     isLogin = false;
                     Toast.makeText(MainActivity.this,"账号不能为空",Toast.LENGTH_SHORT).show();
@@ -62,14 +61,12 @@ public class MainActivity extends AppCompatActivity {
                 if (isLogin) {
                     showProgressDialog();
                     checkLogin(account, password);
-
                 }
             }
-
-
         });
 
     }
+
     //登录接口访问
     private void checkLogin( String account,  String password) {
         final String account1=account;
@@ -103,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(response);
             boolean sucessed = jsonObject.getBoolean("sucessed");
-
+            s
             if(sucessed){
                 JSONObject data = jsonObject.getJSONObject("data");
                 //跳转
